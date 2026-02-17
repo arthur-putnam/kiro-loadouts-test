@@ -1,0 +1,23 @@
+{
+  "fileSystem": {
+    "enabled": true,
+    "scope": ["read", "write"],
+    "restrictions": {
+      "allowedPaths": [
+        "data/**",
+        "notebooks/**",
+        "src/**",
+        "outputs/**"
+      ]
+    }
+  },
+  "shell": {
+    "enabled": true,
+    "allowedCommands": [
+      "python",
+      "pip",
+      "jupyter",
+      "pytest"
+    ]
+  }
+}

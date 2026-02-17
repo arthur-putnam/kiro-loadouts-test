@@ -1,0 +1,13 @@
+{
+  "name": "Pre-commit Linting",
+  "version": "1.0.0",
+  "description": "Run ESLint and Prettier before commits",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["*.ts", "*.tsx", "*.js", "*.jsx"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Run `npm run lint` and fix any errors in the edited file. If there are formatting issues, run `npm run format` as well."
+  }
+}

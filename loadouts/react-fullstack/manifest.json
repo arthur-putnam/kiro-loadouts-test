@@ -1,0 +1,40 @@
+{
+  "name": "react-fullstack",
+  "version": "1.2.0",
+  "description": "Complete React fullstack development environment with TypeScript, testing, and best practices",
+  "dependencies": ["javascript-base"],
+  "artifacts": {
+    "steeringDocuments": [
+      {
+        "path": "steering-documents/react-patterns.md",
+        "inclusionMode": "always"
+      },
+      {
+        "path": "steering-documents/testing/jest-guide.md",
+        "inclusionMode": "fileMatch",
+        "fileMatchPattern": "**/*.test.{js,jsx,ts,tsx}"
+      },
+      {
+        "path": "steering-documents/typescript-config.md",
+        "inclusionMode": "always"
+      }
+    ],
+    "toolPermissions": [
+      {
+        "path": "tool-permissions/file-system.json"
+      }
+    ],
+    "hooks": [
+      {
+        "path": "hooks/pre-commit-lint.json",
+        "enabled": true
+      }
+    ],
+    "mcpConfigs": [
+      {
+        "path": "mcp-configs/postgres.json",
+        "enabled": true
+      }
+    ]
+  }
+}

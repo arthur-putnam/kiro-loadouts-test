@@ -1,0 +1,29 @@
+{
+  "name": "python-data-science",
+  "version": "1.0.0",
+  "description": "Python data science environment with pandas, numpy, and Jupyter best practices",
+  "artifacts": {
+    "steeringDocuments": [
+      {
+        "path": "steering-documents/pandas-patterns.md",
+        "inclusionMode": "fileMatch",
+        "fileMatchPattern": "**/*.py"
+      },
+      {
+        "path": "steering-documents/jupyter-guidelines.md",
+        "inclusionMode": "fileMatch",
+        "fileMatchPattern": "**/*.ipynb"
+      }
+    ],
+    "toolPermissions": [
+      {
+        "path": "tool-permissions/python-tools.json"
+      }
+    ],
+    "skills": [
+      {
+        "path": "skills/data-analysis.md"
+      }
+    ]
+  }
+}

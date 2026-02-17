@@ -1,0 +1,23 @@
+{
+  "name": "javascript-base",
+  "version": "1.0.0",
+  "description": "Base JavaScript/Node.js development environment with ESLint and Prettier",
+  "artifacts": {
+    "steeringDocuments": [
+      {
+        "path": "steering-documents/code-quality/eslint-rules.md",
+        "inclusionMode": "always"
+      },
+      {
+        "path": "steering-documents/code-quality/prettier-formatting.md",
+        "inclusionMode": "always"
+      }
+    ],
+    "hooks": [
+      {
+        "path": "hooks/format-on-save.json",
+        "enabled": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "postgres": {
+    "enabled": true,
+    "command": "npx",
+    "args": ["-y", "@modelcontextprotocol/server-postgres"],
+    "env": {
+      "POSTGRES_CONNECTION_STRING": "${env:DATABASE_URL}"
+    }
+  }
+}

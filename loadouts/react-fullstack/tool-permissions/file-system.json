@@ -1,0 +1,27 @@
+{
+  "fileSystem": {
+    "enabled": true,
+    "scope": ["read", "write"],
+    "restrictions": {
+      "allowedPaths": [
+        ".kiro/**",
+        "src/**",
+        "tests/**",
+        "public/**"
+      ],
+      "deniedPaths": [
+        "node_modules/**",
+        ".git/**"
+      ]
+    }
+  },
+  "shell": {
+    "enabled": true,
+    "allowedCommands": [
+      "npm",
+      "yarn",
+      "git",
+      "npx"
+    ]
+  }
+}
