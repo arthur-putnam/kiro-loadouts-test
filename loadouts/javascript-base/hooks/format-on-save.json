@@ -1,13 +1,19 @@
 {
-  "name": "Format on Save",
-  "version": "1.0.0",
-  "description": "Run Prettier formatting when files are saved",
+  "enabled": true,
+  "name": "Lint on Save",
+  "description": "Automatically runs ESLint with auto-fix when JavaScript files are saved",
+  "version": "1",
   "when": {
     "type": "fileEdited",
-    "patterns": ["*.js", "*.jsx", "*.ts", "*.tsx", "*.json", "*.md"]
+    "patterns": [
+      "*.js",
+      "*.jsx",
+      "*.ts",
+      "*.tsx"
+    ]
   },
   "then": {
     "type": "askAgent",
-    "prompt": "Run `npm run format` to format the edited file with Prettier."
+    "prompt": "Run `npm run lint -- --fix` on the edited file and report any remaining issues that couldn't be auto-fixed"
   }
 }
